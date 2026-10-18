@@ -1,3 +1,56 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Carrito | Tienda de aula</title><link rel="stylesheet" href="/styles.css"></head>
-<body><header><a class="marca" href="/">Tienda de aula</a><nav aria-label="Principal"><a href="/">Catálogo</a><a href="/carrito">Carrito</a><a href="/pedidos">Pedidos</a></nav></header><main><h1>Carrito</h1><p>El carrito todavía no está disponible en esta versión inicial.</p><a class="boton" href="/">Volver al catálogo</a></main><footer>Prototipo académico. Compra simulada sin cobro.</footer></body></html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Carrito | Tienda de aula</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <a class="marca" href="/">Tienda de aula</a>
+        <nav aria-label="Principal">
+            <a href="/">Catálogo</a>
+            <a href="/carrito">Carrito</a>
+            <a href="/pedidos">Pedidos</a>
+        </nav>
+    </header>
+    <main>
+        <p class="eyebrow">RESUMEN DE COMPRA</p>
+        <h1>Carrito de compras</h1>
+        <p id="estado" role="status"></p>
+
+        <section id="seccionCarrito" class="panel">
+            <div id="contenedorItems"></div>
+            <div id="resumenCarrito" class="resumen-carrito" hidden>
+                <p class="total-provisional">Total provisional: <strong id="totalProvisional">$ 0</strong></p>
+                <button id="btnVaciar" type="button" class="boton-secundario">Vaciar carrito</button>
+            </div>
+        </section>
+
+        <section id="seccionFormulario" class="panel" hidden>
+            <h2>Confirmar pedido</h2>
+            <p>Ingresa tus datos para registrar el pedido. El servidor validará los productos y calculará el total
+                definitivo.</p>
+            <form id="formPedido" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input id="nombre" name="nombre" type="text" required placeholder="Ej. Ana Ejemplo">
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input id="correo" name="correo" type="email" required placeholder="Ej. ana@example.com">
+                </div>
+                <button id="btnConfirmar" type="submit">Registrar pedido</button>
+            </form>
+        </section>
+
+        <section id="confirmacionPedido" class="panel confirmacion" hidden></section>
+    </main>
+    <footer>Prototipo académico. Compra simulada sin cobro.</footer>
+    <script src="/carrito.js"></script>
+</body>
+
+</html>

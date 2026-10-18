@@ -1,3 +1,31 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pedidos | Tienda de aula</title><link rel="stylesheet" href="/styles.css"></head>
-<body><header><a class="marca" href="/">Tienda de aula</a><nav aria-label="Principal"><a href="/">Catálogo</a><a href="/carrito">Carrito</a><a href="/pedidos">Pedidos</a></nav></header><main><h1>Pedidos</h1><p>La consulta de pedidos todavía no está disponible en esta versión inicial.</p><a class="boton" href="/">Volver al catálogo</a></main><footer>Prototipo académico. Compra simulada sin cobro.</footer></body></html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pedidos | Tienda de aula</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <a class="marca" href="/">Tienda de aula</a>
+        <nav aria-label="Principal">
+            <a href="/">Catálogo</a>
+            <a href="/carrito">Carrito</a>
+            <a href="/pedidos">Pedidos</a>
+        </nav>
+    </header>
+    <main>
+        <p class="eyebrow">HISTORIAL EN SQLITE</p>
+        <h1>Pedidos registrados</h1>
+        <p>Consulta de los pedidos almacenados en la base de datos junto con sus productos.</p>
+        <p id="estado" role="status">Consultando pedidos…</p>
+        <section id="listaPedidos" class="lista-pedidos" aria-label="Listado de pedidos"></section>
+    </main>
+    <footer>Prototipo académico. Compra simulada sin cobro.</footer>
+    <script src="/pedidos.js"></script>
+</body>
+
+</html>

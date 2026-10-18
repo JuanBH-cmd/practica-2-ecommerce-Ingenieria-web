@@ -1,0 +1,1 @@
+tienda.db se crea al iniciar. Los precios son pesos colombianos enteros. Los pedidos y sus detalles empiezan vacíos. El esquema se proporciona como apoyo; el equipo implementa las operaciones de pedidos. Trabajar con datos ficticios.

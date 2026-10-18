@@ -1,0 +1,13 @@
+{
+  "name": "base-ecommerce-practica20",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Punto de partida académico: catálogo funcional y actividades de carrito, pedidos y MVC",
+  "scripts": {
+    "start": "node server_rutas.js"
+  },
+  "engines": {
+    "node": ">=24.11.0"
+  }
+}
